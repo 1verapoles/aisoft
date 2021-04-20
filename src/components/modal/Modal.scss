@@ -1,0 +1,45 @@
+.modalOverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.25s;
+  }
+
+  
+.modalWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    min-height: 200px;
+    max-width: 500px;
+    padding: 30px;
+    overflow-y: auto;
+    transition: all 0.25s;
+    border-radius: 5px;
+  }
+
+
+  .modal-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: block;
+    -webkit-appearance: button;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    border: 0;
+    line-height: 1;
+    background: transparent;
+    touch-action: manipulation;
+    user-select: none;
+    transition: all 0.25s;
+    &:hover, &:focus {
+      color: saddlebrown;
+    }
+  }
